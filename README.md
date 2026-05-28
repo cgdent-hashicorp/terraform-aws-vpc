@@ -1,4 +1,11 @@
-# AWS VPC Module
+# Terraform AWS Networking Module
 
-Creates a simple VPC and public subnet.
-Tag a version (v1.0.0) to publish this module to Terraform Cloud Private Registry.
+## Usage
+
+```hcl
+module "networking" {
+  source = "git::https://github.com/cgdent-hashicorp/terraform-aws-networking.git?ref=v1.0.0"
+
+  vpc_cidr = "10.0.0.0/16"
+}
+```
